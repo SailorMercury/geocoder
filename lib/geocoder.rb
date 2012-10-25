@@ -5,8 +5,8 @@ require "geocoder/exceptions"
 require "geocoder/cache"
 require "geocoder/request"
 require "geocoder/lookup"
-require "geocoder/models/active_record" if defined?(::ActiveRecord)
-require "geocoder/models/mongoid" if defined?(::Mongoid)
+#require "geocoder/models/active_record" if defined?(::ActiveRecord)
+require "geocoder/models/mongoid"
 require "geocoder/models/mongo_mapper" if defined?(::MongoMapper)
 
 module Geocoder
